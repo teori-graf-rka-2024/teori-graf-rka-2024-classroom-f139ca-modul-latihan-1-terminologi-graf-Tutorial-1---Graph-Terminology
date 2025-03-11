@@ -11,7 +11,7 @@ def create_graph(edges):
 #soal 2
 def get_degree(graph, node):
   degrees = dict(graph.degree())
-  print(degrees[node])
+  return degrees[node]
 
 #soal 3
 def dfs_traversal(graph, start, visited=set(), result=[]):
@@ -46,7 +46,7 @@ def bfs_traversal(graph, start):
 #soal 5
 def find_shortest_path(graph, node1, node2):
   path = nx.shortest_path(graph, source= node1, target= node2)
-  print(path)
+  return path
 
 #soal 6
 def visualize_graph(H):
